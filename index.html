@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="https://static3.toyotabharat.com/images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- link to css -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- page title -->
+    <title>Toyota Bharat Dummy</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="images/company-logo.svg" alt="toyota">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            products
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="product-dropdown">
+                            <ul>
+                                <li>All Model</li>
+                                <li>cars</li>
+                                <li>MPV</li>
+                                <li>SUV</li>
+                                <li>Hybrid</li>
+                            </ul>
+                            <div class="products">
+                                <div class="product-item">
+                                    <img src="images/Glanza.png" alt="Glanza">
+                                    <span>Glanza</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/Toyota-Hyryder.jpg" alt="Innova hyryder">
+                                    <span>Urban Cruise Hyryder</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/crysta.avif" alt="Innova crysta">
+                                    <span>Innova Crysta</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/innova-hycross.webp" alt="hycross">
+                                    <span>Innova Hycross</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/Toyota-Hilux-No-Background.png" alt="hilux">
+                                    <span>Hilux</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/fortuner.png" alt="fortuner">
+                                    <span>Fortuner</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/legender.jpg" alt="legender">
+                                    <span>Legender</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/camry.png" alt="camry">
+                                    <span>Camry</span>
+                                </div>
+                                <div class="product-item">
+                                    <img src="images/vellfire.jpeg" alt="vellfire">
+                                    <span>Vellfire</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">virtual showroom</a></li>
+                    <li>
+                        <a href="#">
+                            services
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-menu">
+                            <ul>
+                                <li>services</li>
+                                <li>T shield & DIY</li>
+                                <li>Safety Recall</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">used cars</a></li>
+                    <li><a href="#">finance</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li>
+                        <a href="#">
+                            more
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown dropdown-menu">
+                            <ul>
+                                <li>Skill development</li>
+                                <li>Careers</li>
+                                <li>Become a Dealer</li>
+                                <li>Customer Stories</li>
+                                <li>Awards</li>
+                                <li>Dream Car Contest</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <button id="buy-btn">
+                <i class="fa-solid fa-shopping-cart"></i>
+                buy online
+            </button>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN section -->
+    <main>
+        <div class="main-image">
+            <div class="image-scroll">
+                <div class="image">
+                    <img src="images/banner-image-1.jpg" alt="image-1">
+                </div>
+                <div class="image">
+                    <img src="images/banner-image-2.jpg" alt="image-2">
+                </div>
+                <div class="image">
+                    <img src="images/banner-image-3.jpg" alt="image-3">
+                </div>
+                <div class="image">
+                    <img src="images/banner-image-4.jpg" alt="image-4">
+                </div>
+    
+                <i class="fa fa-chevron-left" id="prev" onclick="showImage(-1)"></i>
+                <i class="fa fa-chevron-right" id="next" onclick="showImage(1)"></i>
+            </div>
+        </div>
+
+        <div class="quick-link-container">
+            <div class="quick-links">
+                <div class="link quick-link-1">
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <span>find a dealer</span>
+                </a>
+                </div>
+                <hr>
+                <div class="link quick-link-2">
+                    <a href="#">
+                        <i class="fa-solid fa-car"></i>
+                    <span>test drive</span>
+                </a>
+                </div>
+                <hr>
+                <div class="link quick-link-3">
+                    <a href="#">
+                        <i class="fa-solid fa-tag"></i>
+                    <span>price list</span>
+                </a>
+                </div>
+                <hr>
+                <div class="link quick-link-4">
+                    <a href="#">
+                        <i class="fa-solid fa-book"></i>
+                    <span>ebook</span>
+                </a>
+                </div>
+                <hr>
+                <div class="link quick-link-5">
+                    <a href="#">
+                        <i class="fa-solid fa-file"></i>
+                    <span>brochure</span>
+                </a>
+                </div>
+                <hr>
+                <div class="link quick-link-6">
+                    <a href="#">
+                        <i class="fa-solid fa-right-left"></i>
+                        <span>exchange cars</span>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="virtual-showroom-image">
+            <a href="https://www.toyotabharat.com/virtual-showroom/" target="_blank">
+                <img src="images/virtual-showroom.jpg" alt="virtual showroom">
+            </a>
+        </div>
+
+        <section class="cards-section">
+            <div class="cards-heading">
+                <h1>discover the toyota range</h1>
+            </div>
+            <div class="cards-container">
+                <ul class="card-slider">
+                    <li class="card">
+                        <div class="img"><img src="images/Glanza.png" alt=""></div>
+                        <h2>Glanza</h2>
+                        <span>from INR 6,71,000</span>        
+                        <button class="btn">test-drive <i class="fa fa-angle-double-right"></i></button>
+                        <button class="btn">know more <i class="fa fa-angle-double-right"></i></button>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/Toyota-Hyryder.jpg" alt=""></div>
+                        <h2>urban cruise hyryder</h2>
+                        <span>from INR 10,73,000</span>        
+                        <button class="btn">test-drive <i class="fa fa-angle-double-right"></i></button>
+                        <button class="btn">know more <i class="fa fa-angle-double-right"></i></button>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/crysta.avif" alt=""></div>
+                        <h2>Innova crysta</h2>
+                        <span>from INR 19,13,000</span>        
+                        <button class="btn">test-drive <i class="fa fa-angle-double-right"></i></button>
+                        <button class="btn">know more <i class="fa fa-angle-double-right"></i></button>
+                    </li>
+                </ul>
+                <div class="move-btns">
+                    <i class="fa fa-chevron-left" id="left"></i>
+                    <i class="fa fa-chevron-right" id="right"></i>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="form-section">
+            <div class="form-content">
+                <form class="enquiry-form">
+                    <h1>ENQUIRY FORM</h1>
+                    <div class="name">
+                        <select name="pronoun" id="prefix">
+                            <option value="Mr">Mr.</option>
+                            <option value="Mrs">Mrs.</option>
+                            <option value="Ms">Ms.</option>
+                        </select>
+                        <input type="text" id="fullname" placeholder="FullName...">
+                    </div>
+                    <div class="mobile-email">
+                        <input type="text" placeholder="Mobile No...">
+                    <input type="email" name="email" id="email" placeholder="Email ID...">
+                    </div>
+                    <select name="city" id="city">
+                        <option value="pune">select city</option>
+                        <option value="pune">Pune</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bhopal">Bhopal</option>
+                        <option value="chennai">Chennai</option>
+                    </select>
+                    <select name="dealer" id="dealer">
+                        <option value="dealer">Select Dealer</option>
+                    </select>
+                    <textarea name="comment" id="comment" cols="20" rows="5" placeholder="Drop a message here..."></textarea>
+                    <div class="checkboxes">
+                        <input type="checkbox" name="checkbox">
+                    <p>Would you like to exchange your existing car with toyota u trust.</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>I here by agree to receive emails, calls and sms related to promotion activities.</p>
+                    </div>
+                    <button type="submit" id="submit">SUBMIT</button>
+                </form>
+
+                <div class="contact-us">
+                    <h1>CONTACT US</h1>
+                    <div class="contact-content">
+                        <p>Your complete satisfaction is of primary importance to us. Should you ever have questions or comments about your Toyota vehicle, we suggest you follow these steps so your concerns can be addressed as quickly and efficiently as possible.</p>
+                        <div class="email">
+                            <i class="fa fa-envelope"></i>
+                            <span>toyota.co.in</span>
+                        </div>
+                        <div class="phone-no">
+                            <i class="fa fa-phone"></i>
+                            <span>xxxx xxx xxxx </span>
+                        </div>
+                        <div class="whatsapp-no">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+91 xx xxxx xxxx</span>
+                        </div>
+                        <div class="follow-us">
+                            <p><strong>Follow Toyota on :</strong></p>
+                            <ul>
+                                <li><i class="fa-brands fa-whatsapp"></i></li>
+                                <li><i class="fa-brands fa-facebook"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-youtube"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <!-- MAIN-END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="top-sections">
+            <h5><strong>TOP SECTIONS</strong></h5>
+            <ul class="footer-list">
+                <li>price list</li>
+                <li>ebook</li>
+                <li>find a dealer</li>
+                <li>test drive</li>
+                <li>brochoure</li>
+                <li>exchange</li> 
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h5><strong>QUICK LINKS</strong></h5>
+            <ul class="footer-list">
+                <li>about us</li>
+                <li>feedback/queries</li>
+            </ul>
+        </div>
+        <div class="footer-social follow-us">
+            <p><strong>Follow Toyota on :</strong></p>
+            <ul class="footer-list">
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+        </div>
+        <div class="copy-right">
+            <div class="footer-logo logo">
+                <img src="images/company-logo.svg" alt="toyota">
+            </div>
+            <div class="copyright">
+                &copy; 2000-2023 toyota kirloskar moter. all rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- javascript link -->
+    <script src="main.js"></script>
+</body>
+</html>
